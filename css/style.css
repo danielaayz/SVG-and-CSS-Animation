@@ -4,10 +4,15 @@
    padding: 0;
 }
 
-body {
+.body {
    background-color: #c9a0e5;
 }
 
 main .wrapper {
+   background-color: #fae3d5;
    flex-wrap: wrap;
+   width: 80vw;
+}
+
+.container {
 }
