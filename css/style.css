@@ -16,3 +16,20 @@ main .wrapper {
 
 .container {
 }
+
+.face {
+   fill: #ff9bc1;
+   stroke: #fb5441;
+   stroke-width: 15;
+}
+
+.eye {
+   fill: #fb5441;
+}
+
+.mouth {
+   fill: none;
+   stroke: #fb5441;
+   stroke-width: 10px;
+   stroke-linecap: round;
+}
