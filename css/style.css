@@ -17,6 +17,15 @@ main .wrapper {
 .container {
 }
 
+.circle-blue {
+   fill: rgb(109, 196, 224);
+   fill-opacity: 0.8;
+}
+
+.text {
+   fill: rgb(0, 0, 0);
+}
+
 .face {
    fill: #ff9bc1;
    stroke: #fb5441;
