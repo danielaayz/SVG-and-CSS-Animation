@@ -43,10 +43,27 @@
                   <circle class="eye" cx="156" cy="104" r="13"></circle>
                   <path class="mouth" d="M70,160 Q128,240 186,160"></path>
                </svg>
-               <div>
-                  <svg><use xlink:href="image/flower-1.svg#flower-1"</svg>
-               </div>
             </div>
+            <!-- I couldn't make linked svg-file to work my and noticed on the MDN Web Docs webpage that the use-tag together with the xlink:href-attribut is 
+               deprecated and not for use i new websites so I opted for the object-element instead-->
+            <div class="container card1">
+               <object
+                  data="images/flower-thin.svg"
+                  type="image/svg+xml"></object>
+               <svg
+                  width="256"
+                  height="256"
+                  viewBox="0 0 256 256"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle
+                     class="circle-green"
+                     cx="128"
+                     cy="128"
+                     r="120"></circle>
+                  <text class="text" x="68" y="150">Are</text>
+               </svg>
+            </div>
+            <div></div>
             <div class="container"></div>
          </div>
       </main>
