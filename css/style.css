@@ -15,12 +15,22 @@ main .wrapper {
    margin: auto;
    background-color: #fae3d5;
    flex-wrap: wrap;
-   width: 80vw;
+   width: 50vw;
    display: flex;
 }
 
 .container {
    width: 100%;
+}
+
+.card-1 {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.card-2 {
+   display: flex;
+   justify-content: center;
 }
 
 .circle-blue {
