@@ -84,7 +84,7 @@
                <form class="form" action="">
                   <div class="card__content--form">
                      <h1 class="card__content--title">
-                        Pleas join us for a night of celebration!
+                        Please join us for a night of celebration!
                      </h1>
                      <label class="label" for="name">Full name:</label>
                      <input
@@ -95,7 +95,7 @@
                         placeholder="Enter your name"
                         required
                         autofocus />
-                     <label class="label" for="email">E-mail adress</label>
+                     <label class="label" for="email">E-mail adress:</label>
                      <input
                         id="email"
                         class="input-field"
@@ -103,15 +103,33 @@
                         name="email"
                         placeholder="Enter your e-mail"
                         required />
-                     <label class="label" for="phone"
-                        >Enter your phone number:</label
-                     >
+                     <label class="label" for="phone">Phone number:</label>
                      <input
                         id="phone"
                         class="input-field"
                         name="phone"
                         type="tel"
+                        placeholder="Enter your phone number"
                         required />
+                     <input
+                        id="yes"
+                        class="input-radio"
+                        name="rsvp"
+                        type="radio" />
+                     <label class="label" for="rsvp"
+                        >Yes! I will be attending.</label
+                     >
+                     <input
+                        id="no"
+                        class="input-radio"
+                        name="rsvp"
+                        type="radio" />
+                     <label class="label" for="rsvp"
+                        >Sorry, I can't come!</label
+                     >
+                     <div class="clearfix">
+                        <button class="button" type="submit">submit</button>
+                     </div>
                   </div>
                </form>
             </div>
