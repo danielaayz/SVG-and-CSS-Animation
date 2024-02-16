@@ -7,13 +7,16 @@
 }
 
 .body {
+   max-width: 1400px;
    background-color: #c9a0e5;
 }
 
 main .wrapper {
+   margin: auto;
    background-color: #fae3d5;
    flex-wrap: wrap;
    width: 80vw;
+   display: flex;
 }
 
 .container {
