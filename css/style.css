@@ -30,6 +30,11 @@ main .wrapper {
    fill-opacity: 0.8;
 }
 
+.rec-pink {
+   fill: #ff9bc1;
+   fill-opacity: 0.8;
+}
+
 .text {
    fill: rgb(0, 0, 0);
    font-family: "Luckiest Guy", cursive;
