@@ -109,7 +109,7 @@ main .wrapper {
 .input-field {
    width: 100%;
    border: none;
-   border-bottom: 1px solid rgba(159, 159, 159, 0.4);
+   border-bottom: 1px solid #181818;
    background-color: #fae3d5;
    outline: none;
    padding-left: 16px;
@@ -158,6 +158,7 @@ main .wrapper {
 /* On mouse-over, add a background color */
 .container-radio:hover input ~ .checkmark {
    background-color: #fff;
+   transition: all 0.7s ease-in-out;
 }
 
 /* When the radio button is checked, add a background */
@@ -175,6 +176,8 @@ main .wrapper {
 /* Show the indicator when checked */
 .container-radio input:checked ~ .checkmark::after {
    display: block;
+   transition: all 0.7s ease-in-out;
+   transition-delay: 0.7s;
 }
 
 /* Style the indicator */
@@ -197,8 +200,8 @@ main .wrapper {
    border: 1px solid #181818;
    padding: 11px 12px;
    font-size: 15px;
-   color: #fff;
-   background-color: #36a23a;
+   color: #181818;
+   background-color: #86d398;
    cursor: pointer;
    display: inline-block;
    margin-top: 8px;

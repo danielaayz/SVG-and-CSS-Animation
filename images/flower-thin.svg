@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="IconChangeColor" height="267" width="267" viewBox="0 0 256 256">
+<svg xmlns="http://www.w3.org/2000/svg" id="IconChangeColor" height="267" width="267">
+<symbol id="flower-red" viewBox="0 0 256 256">
 <rect width="256" height="256" fill="none"></rect>
 <circle cx="128" cy="128" r="28" fill="#FFD03A" stroke="#ff5441" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></circle>
 <path d="M115,103.2c-7.3-15.4-15-34.6-15-47.2a28,28,0,0,1,56,0c0,12.6-7.7,31.8-15,47.2" fill="none" stroke="#ff5441" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" id="mainIconPathAttribute" filter="url(#shadow)"></path>
@@ -9,4 +10,5 @@
 <path d="M143,104.4c9.7-14.1,22.5-30.4,33.4-36.6a28,28,0,0,1,28,48.4c-10.9,6.3-31.4,9.3-48.4,10.6" fill="none" stroke="#ff5441" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" id="mainIconPathAttribute"></path>
 <filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter>
 <filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter>
+</symbol>
 </svg>
