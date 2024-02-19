@@ -7,6 +7,9 @@
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
@@ -61,7 +64,12 @@
                      cx="128"
                      cy="128"
                      r="120"></circle>
-                  <text class="text" x="68" y="150">Are</text>
+                  <text
+                     class="text animate__animated animate__tada"
+                     x="68"
+                     y="150">
+                     Are
+                  </text>
                </svg>
             </div>
             <div class="container card-3">
@@ -94,8 +102,7 @@
                         type="text"
                         name="name"
                         placeholder="Enter your name"
-                        required
-                        autofocus />
+                        required />
                      <label class="label" for="email">E-mail adress:</label>
                      <input
                         id="email"
