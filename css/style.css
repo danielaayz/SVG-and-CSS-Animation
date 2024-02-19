@@ -23,17 +23,16 @@ main .wrapper {
    flex-wrap: wrap;
    width: 50vw;
    display: flex;
-   margin-top: 70px;
-   padding-top: 50px;
-   border-top-right-radius: 80px;
-   border-top-left-radius: 80px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding-top: 20px;
+   border-radius: 80px;
 }
 
 .container {
    width: 100%;
    display: flex;
    justify-content: center;
-   padding-bottom: 70px;
 }
 
 .card-1 {
@@ -48,14 +47,27 @@ main .wrapper {
 
 /* Styling SVG Starts */
 
-.container__circle-1 {
-   animation-name: smileyFace;
-   animation-iteration-count: infinite;
-   transition: 5s ease-in-out;
+.container__smiley {
+   animation: smileyFace 1.5s linear -1s infinite normal forwards;
+   animation-play-state: running;
 }
 
-.container__circle-1:hover {
-   rotate: 1.75turn;
+@keyframes smileyFace {
+   0% {
+      transform: scale(1) rotate(0deg);
+   }
+   25% {
+      transform: scale(1) rotate(91deg);
+   }
+   50% {
+      transform: scale(1) rotate(183deg);
+   }
+   75% {
+      transform: scale(1) rotate(274deg);
+   }
+   100% {
+      transform: scale(1) rotate(365deg);
+   }
 }
 
 .circle-blue {
@@ -66,6 +78,29 @@ main .wrapper {
 .circle-green {
    fill: rgb(54, 162, 58);
    fill-opacity: 0.8;
+}
+
+.spinning-flower {
+   animation: flowerImage 5s linear -1s infinite normal forwards;
+   animation-play-state: running;
+}
+
+@keyframes flowerImage {
+   0% {
+      transform: scale(1) rotate(0deg);
+   }
+   25% {
+      transform: scale(1) rotate(91deg);
+   }
+   50% {
+      transform: scale(1) rotate(183deg);
+   }
+   75% {
+      transform: scale(1) rotate(274deg);
+   }
+   100% {
+      transform: scale(1) rotate(360deg);
+   }
 }
 
 .rec-pink {
@@ -79,10 +114,6 @@ main .wrapper {
    font-weight: 400;
    font-style: normal;
    font-size: 70px;
-}
-
-/* Animation from Animation.css library */
-.animate__tada {
 }
 
 .face {
@@ -102,20 +133,14 @@ main .wrapper {
    stroke-linecap: round;
 }
 
-@keyframes {
-   from {
-      transform: scale(1) rotate(0deg);
-   }
-   to {
-      transform: scale(1.1) rotate(15deg);
-   }
+.animate-flash {
+   animation-duration: 5s;
 }
 
 /* Styling Form Starts */
 
 .form {
    max-width: 400px;
-   position: relative;
    padding-bottom: 70px;
 }
 
@@ -145,7 +170,11 @@ main .wrapper {
    background-color: #fbf3dc;
 }
 
-/* Customize the label (the container) */
+.card__content--radio {
+   margin-top: 27px;
+}
+
+/* Customize the label (the container for the radio button) */
 
 .container-radio {
    display: block;
@@ -216,6 +245,7 @@ main .wrapper {
 .clearfix {
    display: flex;
    justify-content: center;
+   margin-top: 30px;
 }
 
 .button {

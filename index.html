@@ -27,20 +27,19 @@
                      cx="128"
                      cy="128"
                      r="120"></circle>
-                  <text class="text" x="68" y="150">You</text>
+                  <text
+                     class="text animate__animated animate__flash"
+                     x="68"
+                     y="150">
+                     You
+                  </text>
                </svg>
                <svg
-                  class="container__circle-1"
+                  class="container__smiley"
                   width="256"
                   height="256"
                   viewBox="0 0 256 256"
                   xmlns="http://www.w3.org/2000/svg">
-                  <circle
-                     class="circle-blue"
-                     cx="128"
-                     cy="128"
-                     r="120"></circle>
-                  <text class="text" x="68" y="150">You</text>
                   <circle class="face" cx="128" cy="128" r="120"></circle>
                   <circle class="eye" cx="100" cy="104" r="13"></circle>
                   <circle class="eye" cx="156" cy="104" r="13"></circle>
@@ -48,12 +47,14 @@
                </svg>
             </div>
             <div class="container card-2">
-               <svg>
+               <!-- The use-element and the href-attribute only seems to be working in older browsers. So I opted for the object-element instead. -->
+               <!-- <svg>
                   <use href="images/flower-thin.svg#flower-red"></use>
-               </svg>
-               <!-- <object
-                  data="images/flower-thin.svg"
-                  type="image/svg+xml"></object> -->
+               </svg> -->
+               <object
+                  class="spinning-flower"
+                  data="images/flower.svg"
+                  type="image/svg+xml"></object>
                <svg
                   width="256"
                   height="256"
@@ -65,7 +66,7 @@
                      cy="128"
                      r="120"></circle>
                   <text
-                     class="text animate__animated animate__tada"
+                     class="text animate__animated animate__flash"
                      x="68"
                      y="150">
                      Are
@@ -74,19 +75,24 @@
             </div>
             <div class="container card-3">
                <svg
-                  width="500"
-                  height="350"
+                  width="400"
+                  height="220"
                   class="rec-pink"
-                  viewBox="0 0 256 256"
+                  viewBox="0 0 400 220"
                   xmlns="http://www.w3.org/2000/svg">
                   <rect
-                     width="300"
-                     height="180"
+                     width="380"
+                     height="150"
                      x="5"
-                     y="30"
+                     y="10"
                      rx="80"
                      ry="80"></rect>
-                  <text class="text" x="25" y="155">Invited!</text>
+                  <text
+                     class="text animate__animated animate__flash"
+                     x="60"
+                     y="115">
+                     Invited!
+                  </text>
                </svg>
             </div>
             <div class="container">
@@ -119,20 +125,22 @@
                         type="tel"
                         placeholder="Enter your phone number"
                         required />
-                     <label class="container-radio" for="yes"
-                        >Yes! I will be attending.
-                        <input
-                           id="yes"
-                           name="rsvp"
-                           type="radio"
-                           checked="checked" />
-                        <span class="checkmark"></span>
-                     </label>
-                     <label class="container-radio" for="no"
-                        >Sorry, I can't come!
-                        <input id="no" name="rsvp" type="radio" />
-                        <span class="checkmark"></span>
-                     </label>
+                     <div class="card__content--radio">
+                        <label class="container-radio" for="yes"
+                           >Yes! I will be attending.
+                           <input
+                              id="yes"
+                              name="rsvp"
+                              type="radio"
+                              checked="checked" />
+                           <span class="checkmark"></span>
+                        </label>
+                        <label class="container-radio" for="no"
+                           >Sorry, I can't come!
+                           <input id="no" name="rsvp" type="radio" />
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
                      <div class="clearfix">
                         <button class="button" type="submit">submit</button>
                      </div>
