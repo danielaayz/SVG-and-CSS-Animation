@@ -7,13 +7,13 @@
 }
 
 body {
+   width: 100%;
    max-width: 1400px;
    background-color: #c9a0e5;
    font-family: "Lato", sans-serif;
    font-size: 16px;
    font-weight: 400;
    font-style: normal;
-   font-weight: normal;
    color: #181818;
 }
 
@@ -140,6 +140,7 @@ main .wrapper {
 /* Styling Form Starts */
 
 .form {
+   width: 100%;
    max-width: 400px;
    padding-bottom: 70px;
 }
@@ -164,6 +165,10 @@ main .wrapper {
    min-height: 40px;
    border-radius: 0px;
    margin-bottom: 16px;
+}
+
+.input-field:hover {
+   background: #fbf3dc;
 }
 
 .input-field:focus {
